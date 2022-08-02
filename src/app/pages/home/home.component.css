@@ -1,0 +1,184 @@
+nav {
+    background-color: #fff;
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 4px 10px 3px #dedede;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+nav h2,
+nav h4 {
+    line-height: 1;
+    margin: 0;
+}
+
+nav h2 {
+    font-size: 1.5rem;
+}
+
+nav h4 {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.nav-logo {
+    background-image: url('http://aai-frontend-interview-mock-data.s3-website-sa-east-1.amazonaws.com/assets/128x128.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+
+/*body*/
+
+main {
+    padding: 10px;
+    width: calc(100% - 4px)
+}
+
+div.card {
+    border-radius: 8px;
+    background-color: #eee;
+    width: 100%;
+    height: 300px;
+    margin: 10px;
+    position: relative;
+}
+
+div.card-img {
+    height: 110px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+
+div.card-img img {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 110px;
+}
+
+div.card-body {
+    padding: 0 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+}
+
+div.card-row {
+    justify-content: space-between;
+}
+
+div.card {
+    max-width: 250px;
+    transition: all 0.25s;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0px 4px 10px 3px #dedede;
+}
+
+div.card:hover {
+    transition: all 0.25s;
+    transform: scale(1.125);
+}
+
+h4 {
+    line-height: 1;
+    margin: .5rem 0;
+    font-size: 1.5em;
+}
+
+div.btn-remove {
+    background-color: #eee;
+    border: 1px solid #999;
+    border-radius: 50%;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+div.btn-remove i.btn-remove-icon {
+    background-image: url("http://aai-frontend-interview-mock-data.s3-website-sa-east-1.amazonaws.com/assets/close.svg");
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+div.btn-remove:hover {
+    transform: rotate(-90deg);
+    transition: all 0.25s;
+    border: 1px solid #333;
+}
+
+div.btn-remove:hover i.btn-remove-icon {
+    filter: invert(13%) sepia(90%) saturate(6390%) hue-rotate(358deg) brightness(100%) contrast(113%);
+}
+
+div.tag-type {
+    border-radius: 4px;
+    position: absolute;
+    height: 20px;
+    top: 80px;
+    right: 10px;
+    cursor: pointer;
+    padding: 2.5px;
+    font-size: 8pt;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    color: #fff;
+}
+
+
+/* campo de pesquisa */
+
+.input-row {
+    justify-content: center;
+}
+
+.input-form {
+    display: flex;
+    padding: 25px;
+}
+
+.input-form-element {
+    border-radius: 8px 0 0 8px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 50vw;
+    border: 1px solid #d9d9db;
+}
+
+button.btn-search {
+    padding: 5px 15px;
+    border-radius: 0 8px 8px 0;
+    background-color: #fff;
+    border: 1px solid #d9d9db;
+    margin-left: -1px;
+    cursor: pointer;
+}
+
+img.input-btn-search {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* sem dados para exibir */
+
+.text-row {
+    justify-content: center;
+}

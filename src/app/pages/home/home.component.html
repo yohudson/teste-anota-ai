@@ -1,0 +1,35 @@
+<nav>
+    <div class="nav-logo"></div>
+    <div>
+        <h2>Teste de Desenvolvedor Front-End - Anota AI</h2>
+        <h4>&hyphen; João Silva da Silva &hyphen;&hyphen;&hyphen;</h4>
+    </div>
+</nav>
+<main>
+    <div class="row input-row">
+        <div class="input-form">
+            <input type="text" class="input-form-element" [(ngModel)]="search" autocomplete="off" (keyup)="searchText(search)" />
+            <button class="btn-search">
+              <img class="input-btn-search" src="../../../assets/img/search.png">
+            </button>
+        </div>
+    </div>
+    <div class="row card-row">
+        <div class="card" *ngFor="let item of itemList; let i = index">
+            <div class="btn-remove" (click)="removeItem(i)">
+                <i class="btn-remove-icon"></i>
+            </div>
+            <div class="tag-type" [style.background-color]="item.type == 1 ? '#0058ff ' : item.type == 2 ? '#fc0050' : '#8f8800'">{{item.type == 1 ? 'Paisagem' : item.type == 2 ? 'Flor' : 'Pizza'}}</div>
+            <div class="card-img">
+                <img [src]='item.img'>
+            </div>
+            <div class="card-body">
+                <h4 class="card-body-title">{{item.title}}</h4>
+                <span class="card-body-text">{{item.description}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="row text-row" *ngIf="itemList.length == 0">
+        <h3>Não há itens para exibir</h3>
+    </div>
+</main>
